@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion> <!-- Versão do modelo POM -->
+
+    <groupId>org.example</groupId> <!-- Identificador do grupo do projeto -->
+    <artifactId>application</artifactId> <!-- Identificador do artefato do projeto -->
+    <version>1.0-SNAPSHOT</version> <!-- Versão do artefato -->
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source> <!-- Versão do Java para compilar o código-fonte -->
+        <maven.compiler.target>17</maven.compiler.target> <!-- Versão do Java para gerar o bytecode -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- Codificação do projeto -->
+    </properties>
+
+    <dependencies> <!-- Seção de dependências do projeto -->
+
+        <!-- Dependência do Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId> <!-- Grupo da dependência -->
+            <artifactId>hibernate-core</artifactId> <!-- Artefato da dependência -->
+            <version>6.6.4.Final</version> <!-- Versão da dependência -->
+        </dependency>
+
+        <!-- Dependência do Conector JDBC do MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version> <!-- Versão do conector MySQL -->
+        </dependency>
+
+    </dependencies>
+
+</project>
